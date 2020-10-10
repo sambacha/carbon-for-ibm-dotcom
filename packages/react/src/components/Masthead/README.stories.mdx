@@ -90,6 +90,17 @@ document.addEventListener('onMegaMenuToggle', e => {
 });
 ```
 
+## Custom Events
+
+The masthead and side nav currently emit the event `onMegaMenuToggle`.
+
+```javascript
+document.addEventListener('onMegaMenuToggle', e => {
+  console.log(e.detail); // { isExpanded: true|false }
+  // do something here
+});
+```
+
 ## Props
 
 <Props of={Masthead} />
